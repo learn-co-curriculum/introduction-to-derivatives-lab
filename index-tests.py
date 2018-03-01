@@ -1,7 +1,7 @@
 import unittest
 from ipynb.fs.full.index import (derivative_of_graphed_function,
 derivative_at_x_value_provided_tangent, output_at, df_dx,
-polynomial_function_trace, tangent_line_delta, four_x_cubed_plus)
+nonlinear_function_trace, tangent_line_delta, four_x_cubed_plus)
 
 class IntroToDerivatives (unittest.TestCase):
     def test_derivative_of_graphed_function(self):
@@ -29,17 +29,12 @@ class IntroToDerivatives (unittest.TestCase):
         x_value = 2
         self.assertEqual(df_dx(third_terms, x_value, delta_value), 31.012)
 
-
-
-
-
-
-    def test_polynomial_trace(self):
+    def test_nonlinear_trace(self):
         three_x_cubed_plus = [(3, 3), (-11, 0)]
         three_x_cubed_plus_trace = {'x': [-4, -3, -2, -1, 0, 1, 2, 3],
         'y': [-203, -92, -35, -14, -11, -8, 13, 70]}
-        self.assertEqual(polynomial_function_trace(three_x_cubed_plus, list(range(-4, 4))), three_x_cubed_plus_trace)
+        self.assertEqual(nonlinear_function_trace(three_x_cubed_plus, list(range(-4, 4))), three_x_cubed_plus_trace)
 
     def test_tangent_line_delta(self):
-        three_x_cubed_plus = [(3, 3), (-11, 0)]
-        self.assertEqual(tangent_line_delta(three_x_cubed_plus, 3, line_length = 4, delta = .00001), {'x': [-1, 3, 7], 'y': [-254.0, 70, 394.0]})
+        x_squared = [(1, 2)]
+        self.assertEqual(tangent_line_delta(x_squared, 2, line_length = 1, delta = .00001), {'x': [1.5, 2, 2.5], 'y': [2.0, 4, 6.0]})
