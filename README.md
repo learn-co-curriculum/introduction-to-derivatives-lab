@@ -54,7 +54,7 @@ Here it is as a list of tuples:
 four_x_squared_plus_four_x_minus_ten = [(4, 2), (4, 1), (-10, 0)]
 ```
 
-So each tuple in the list represents a different term in the function.  The first element of the tuple is the term's constant and the second element of the tuple is the term's exponent.  Thus $4x^2$ translates to `(4, 2)` and  $-10$ translates to `(-10, 0)` because $-10$ equals $-10*x^0$.  
+So each tuple in the list represents a different term in the function.  The first element of the tuple is the term's constant and the second element of the tuple is the term's exponent.  Thus $4x^2$ translates to `(4, 2)` and  $-10$ translates to `(-10, 0)` because $-10$ is the same as $-10*x^0$.  
 > We'll refer to this list of tuples as "list of terms", or `list_of_terms`.
 
 Ok, so give this a shot. Write $ f(x) = 4x^3 + 11x^2 $ as a list of terms.  Assign it to the variable `four_x_cubed_plus_eleven_x_squared`.
@@ -123,18 +123,6 @@ three_x_squared_minus_eleven_trace  = trace_values(x_values, y_values, mode = 'l
 plot([three_x_squared_minus_eleven_trace], {'title': '3x^2 - 11'})
 ```
 
-
-<script>requirejs.config({paths: { 'plotly': ['https://cdn.plot.ly/plotly-latest.min']},});if(!window.Plotly) {{require(['plotly'],function(plotly) {window.Plotly=plotly;});}}</script>
-
-
-
-<script>requirejs.config({paths: { 'plotly': ['https://cdn.plot.ly/plotly-latest.min']},});if(!window.Plotly) {{require(['plotly'],function(plotly) {window.Plotly=plotly;});}}</script>
-
-
-
-<div id="dcb87a54-f050-414f-84d4-4af3eb8d53e7" style="height: 525px; width: 100%;" class="plotly-graph-div"></div><script type="text/javascript">require(["plotly"], function(Plotly) { window.PLOTLYENV=window.PLOTLYENV || {};window.PLOTLYENV.BASE_URL="https://plot.ly";Plotly.newPlot("dcb87a54-f050-414f-84d4-4af3eb8d53e7", [{"x": [-30, -29, -28, -27, -26, -25, -24, -23, -22, -21, -20, -19, -18, -17, -16, -15, -14, -13, -12, -11, -10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29], "y": [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null], "mode": "line", "name": "data", "text": []}], {"title": "3x^2 - 11"}, {"showLink": true, "linkText": "Export to plot.ly"})});</script>
-
-
 ### Moving to derivatives of linear functions
 
 Let's start with a function, $f(x) = 4x + 15$.  We represent the function as the following:
@@ -162,14 +150,6 @@ four_x_plus_fifteen_values = list(map(lambda x: output_at(four_x_plus_fifteen, x
 four_x_plus_fifteen_trace = trace_values(x_values, four_x_plus_fifteen_values, mode = 'line')
 plot([four_x_plus_fifteen_trace])
 ```
-
-
-<script>requirejs.config({paths: { 'plotly': ['https://cdn.plot.ly/plotly-latest.min']},});if(!window.Plotly) {{require(['plotly'],function(plotly) {window.Plotly=plotly;});}}</script>
-
-
-
-<div id="85c5566f-c60b-497d-9794-3caf9ee4e07b" style="height: 525px; width: 100%;" class="plotly-graph-div"></div><script type="text/javascript">require(["plotly"], function(Plotly) { window.PLOTLYENV=window.PLOTLYENV || {};window.PLOTLYENV.BASE_URL="https://plot.ly";Plotly.newPlot("85c5566f-c60b-497d-9794-3caf9ee4e07b", [{"x": [0, 1, 2, 3, 4, 5], "y": [null, null, null, null, null, null], "mode": "line", "name": "data", "text": []}], {}, {"showLink": true, "linkText": "Export to plot.ly"})});</script>
-
 
 Ok, time for what we are here for, derivatives.  Remember that the derivative is the instantaneous rate of change of a function, and is expressed as:
 
@@ -209,8 +189,8 @@ def delta_f_trace(list_of_terms, x_value, delta_x):
     delta_f_value = delta_f(list_of_terms, x_value, delta_x)
     if initial_f_value and delta_f_value:
         trace =  trace_values(x_values=[x_value + delta_x, x_value + delta_x], 
-                              y_values=[initial_f, initial_f + delta_y], mode = 'line',
-                              name = 'delta f = ' + str(delta_y))
+                              y_values=[initial_f_value, initial_f_value + delta_f_value], mode = 'line',
+                              name = 'delta f = ' + str(delta_x))
         return trace
 ```
 
@@ -227,7 +207,7 @@ def delta_x_trace(list_of_terms, x_value, delta_x):
     initial_f_value = output_at(list_of_terms, x_value)
     if initial_f_value:
         trace = trace_values(x_values=[x_value, x_value + delta_x],
-                            y_values=[initial_f, initial_f], mode = 'line', 
+                            y_values=[initial_f_value, initial_f_value], mode = 'line', 
                             name = 'delta x = ' + str(delta_x))
         return trace
 ```
@@ -334,15 +314,6 @@ four_x_plus_fifteen_function_and_derivative = function_and_derivative_trace(four
 
 plot_figure(four_x_plus_fifteen_function_and_derivative)
 ```
-
-    This is the format of your plot grid:
-    [ (1,1) x1,y1 ]  [ (1,2) x2,y2 ]
-    
-
-
-
-<div id="970652b8-3ebb-41ba-bc65-5f0b9b3839b4" style="height: 525px; width: 100%;" class="plotly-graph-div"></div><script type="text/javascript">require(["plotly"], function(Plotly) { window.PLOTLYENV=window.PLOTLYENV || {};window.PLOTLYENV.BASE_URL="https://plot.ly";Plotly.newPlot("970652b8-3ebb-41ba-bc65-5f0b9b3839b4", [{"type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6], "y": [null, null, null, null, null, null, null], "mode": "line", "name": "data", "text": [], "xaxis": "x1", "yaxis": "y1"}, {"type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6], "y": [null, null, null, null, null, null, null], "mode": "line", "name": "data", "text": [], "xaxis": "x2", "yaxis": "y2"}], {"xaxis1": {"domain": [0.0, 0.45], "anchor": "y1"}, "yaxis1": {"domain": [0.0, 1.0], "anchor": "x1"}, "xaxis2": {"domain": [0.55, 1.0], "anchor": "y2"}, "yaxis2": {"domain": [0.0, 1.0], "anchor": "x2"}}, {"showLink": true, "linkText": "Export to plot.ly"})});</script>
-
 
 ### Summary
 
