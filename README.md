@@ -119,7 +119,7 @@ from graph import plot, trace_values
 x_values = list(range(-30, 30, 1))
 y_values = list(map(lambda x: output_at(three_x_squared_minus_eleven, x),x_values))
 
-three_x_squared_minus_eleven_trace  = trace_values(x_values, y_values, mode = 'line')
+three_x_squared_minus_eleven_trace  = trace_values(x_values, y_values, mode = 'lines')
 plot([three_x_squared_minus_eleven_trace], {'title': '3x^2 - 11'})
 ```
 
@@ -147,7 +147,7 @@ x_values = list(range(0, 6))
 
 
 four_x_plus_fifteen_values = list(map(lambda x: output_at(four_x_plus_fifteen, x),x_values))
-four_x_plus_fifteen_trace = trace_values(x_values, four_x_plus_fifteen_values, mode = 'line')
+four_x_plus_fifteen_trace = trace_values(x_values, four_x_plus_fifteen_values, mode = 'lines')
 plot([four_x_plus_fifteen_trace])
 ```
 
@@ -189,7 +189,7 @@ def delta_f_trace(list_of_terms, x_value, delta_x):
     delta_f_value = delta_f(list_of_terms, x_value, delta_x)
     if initial_f_value and delta_f_value:
         trace =  trace_values(x_values=[x_value + delta_x, x_value + delta_x], 
-                              y_values=[initial_f_value, initial_f_value + delta_f_value], mode = 'line',
+                              y_values=[initial_f_value, initial_f_value + delta_f_value], mode = 'lines',
                               name = 'delta f = ' + str(delta_x))
         return trace
 ```
@@ -207,7 +207,7 @@ def delta_x_trace(list_of_terms, x_value, delta_x):
     initial_f_value = output_at(list_of_terms, x_value)
     if initial_f_value:
         trace = trace_values(x_values=[x_value, x_value + delta_x],
-                            y_values=[initial_f_value, initial_f_value], mode = 'line', 
+                            y_values=[initial_f_value, initial_f_value], mode = 'lines', 
                             name = 'delta x = ' + str(delta_x))
         return trace
 ```
@@ -252,7 +252,7 @@ def derivative_trace(list_of_terms, x_value, line_length = 4, delta_x = .01):
         x_plus = x_value + line_length/2
         y_minus = y - derivative_at * line_length/2
         y_plus = y + derivative_at * line_length/2
-        return trace_values([x_minus, x_value, x_plus],[y_minus, y, y_plus], name = "f' (x) = " + str(derivative_at), mode = 'line')
+        return trace_values([x_minus, x_value, x_plus],[y_minus, y, y_plus], name = "f' (x) = " + str(derivative_at), mode = 'lines')
 ```
 
 > Our `derivative_trace` function takes as arguments `list_of_terms`, `x_value`, which is where our line should be tangent to our function, `line_length` as the length of our tangent line, and `delta_x` which is our $\Delta x$.
@@ -299,11 +299,11 @@ from graph import make_subplots, trace_values, plot_figure
 
 def function_values_trace(list_of_terms, x_values):
     function_values = list(map(lambda x: output_at(list_of_terms, x),x_values))
-    return trace_values(x_values, function_values, mode = 'line')
+    return trace_values(x_values, function_values, mode = 'lines')
     
 def derivative_values_trace(list_of_terms, x_values, delta_x):
     derivative_values = list(map(lambda x: derivative_of(list_of_terms, x, delta_x), x_values))
-    return trace_values(x_values, derivative_values, mode = 'line')
+    return trace_values(x_values, derivative_values, mode = 'lines')
 
 def function_and_derivative_trace(list_of_terms, x_values, delta_x):
     traced_function = function_values_trace(list_of_terms, x_values)
