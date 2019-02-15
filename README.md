@@ -123,18 +123,6 @@ three_x_squared_minus_eleven_trace  = trace_values(x_values, y_values, mode = 'l
 plot([three_x_squared_minus_eleven_trace], {'title': '3x^2 - 11'})
 ```
 
-
-<script>requirejs.config({paths: { 'plotly': ['https://cdn.plot.ly/plotly-latest.min']},});if(!window.Plotly) {{require(['plotly'],function(plotly) {window.Plotly=plotly;});}}</script>
-
-
-
-<script>requirejs.config({paths: { 'plotly': ['https://cdn.plot.ly/plotly-latest.min']},});if(!window.Plotly) {{require(['plotly'],function(plotly) {window.Plotly=plotly;});}}</script>
-
-
-
-<div id="e8db5001-adae-40af-ae78-b5212afc04bc" style="height: 525px; width: 100%;" class="plotly-graph-div"></div><script type="text/javascript">require(["plotly"], function(Plotly) { window.PLOTLYENV=window.PLOTLYENV || {};window.PLOTLYENV.BASE_URL="https://plot.ly";Plotly.newPlot("e8db5001-adae-40af-ae78-b5212afc04bc", [{"mode": "lines", "name": "data", "text": [], "x": [-30, -29, -28, -27, -26, -25, -24, -23, -22, -21, -20, -19, -18, -17, -16, -15, -14, -13, -12, -11, -10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29], "y": [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null], "type": "scatter", "uid": "0aa1d35e-30d9-11e9-8935-88e9fe4c5d44"}], {"title": "3x^2 - 11"}, {"showLink": true, "linkText": "Export to plot.ly"})});</script>
-
-
 ### Moving to derivatives of linear functions
 
 Let's start with a function, $f(x) = 4x + 15$.  We represent the function as the following:
@@ -162,14 +150,6 @@ four_x_plus_fifteen_values = list(map(lambda x: output_at(four_x_plus_fifteen, x
 four_x_plus_fifteen_trace = trace_values(x_values, four_x_plus_fifteen_values, mode = 'lines')
 plot([four_x_plus_fifteen_trace])
 ```
-
-
-<script>requirejs.config({paths: { 'plotly': ['https://cdn.plot.ly/plotly-latest.min']},});if(!window.Plotly) {{require(['plotly'],function(plotly) {window.Plotly=plotly;});}}</script>
-
-
-
-<div id="a00dc9aa-a5af-4a72-8574-6590af199d31" style="height: 525px; width: 100%;" class="plotly-graph-div"></div><script type="text/javascript">require(["plotly"], function(Plotly) { window.PLOTLYENV=window.PLOTLYENV || {};window.PLOTLYENV.BASE_URL="https://plot.ly";Plotly.newPlot("a00dc9aa-a5af-4a72-8574-6590af199d31", [{"mode": "lines", "name": "data", "text": [], "x": [0, 1, 2, 3, 4, 5], "y": [null, null, null, null, null, null], "type": "scatter", "uid": "0aae1470-30d9-11e9-a83e-88e9fe4c5d44"}], {}, {"showLink": true, "linkText": "Export to plot.ly"})});</script>
-
 
 Ok, time for what we are here for, derivatives.  Remember that the derivative is the instantaneous rate of change of a function, and is expressed as:
 
@@ -334,22 +314,6 @@ four_x_plus_fifteen_function_and_derivative = function_and_derivative_trace(four
 
 plot_figure(four_x_plus_fifteen_function_and_derivative)
 ```
-
-    This is the format of your plot grid:
-    [ (1,1) x1,y1 ]  [ (1,2) x2,y2 ]
-    
-
-
-
-<div id="85701f3f-acbf-49e0-a467-9aa11ad75427" style="height: 525px; width: 100%;" class="plotly-graph-div"></div><script type="text/javascript">require(["plotly"], function(Plotly) { window.PLOTLYENV=window.PLOTLYENV || {};window.PLOTLYENV.BASE_URL="https://plot.ly";
-        Plotly.plot(
-            '85701f3f-acbf-49e0-a467-9aa11ad75427',
-            [{"mode": "lines", "name": "data", "text": [], "x": [0, 1, 2, 3, 4, 5, 6], "y": [null, null, null, null, null, null, null], "type": "scatter", "uid": "0d900d10-30d9-11e9-b7de-88e9fe4c5d44", "xaxis": "x", "yaxis": "y"}, {"mode": "lines", "name": "data", "text": [], "x": [0, 1, 2, 3, 4, 5, 6], "y": [null, null, null, null, null, null, null], "type": "scatter", "uid": "0d90a5d8-30d9-11e9-9291-88e9fe4c5d44", "xaxis": "x2", "yaxis": "y2"}],
-            {"xaxis": {"anchor": "y", "domain": [0.0, 0.45]}, "yaxis": {"anchor": "x", "domain": [0.0, 1.0]}, "xaxis2": {"anchor": "y2", "domain": [0.55, 1.0]}, "yaxis2": {"anchor": "x2", "domain": [0.0, 1.0]}},
-            {"showLink": true, "linkText": "Export to plot.ly"}
-        ).then(function () {return Plotly.addFrames('85701f3f-acbf-49e0-a467-9aa11ad75427',{});}).then(function(){Plotly.animate('85701f3f-acbf-49e0-a467-9aa11ad75427');})
-        });</script>
-
 
 ### Summary
 
