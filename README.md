@@ -147,7 +147,7 @@ plot([three_x_squared_minus_eleven_trace], {'title': '3x^2 - 11'})
 
 
 
-<div id="e05222b6-a6c9-4dfe-930d-c30a47100d3a" style="height: 525px; width: 100%;" class="plotly-graph-div"></div><script type="text/javascript">require(["plotly"], function(Plotly) { window.PLOTLYENV=window.PLOTLYENV || {};window.PLOTLYENV.BASE_URL="https://plot.ly";Plotly.newPlot("e05222b6-a6c9-4dfe-930d-c30a47100d3a", [{"mode": "lines", "name": "data", "text": [], "x": [-30, -29, -28, -27, -26, -25, -24, -23, -22, -21, -20, -19, -18, -17, -16, -15, -14, -13, -12, -11, -10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29], "y": [2689, 2512, 2341, 2176, 2017, 1864, 1717, 1576, 1441, 1312, 1189, 1072, 961, 856, 757, 664, 577, 496, 421, 352, 289, 232, 181, 136, 97, 64, 37, 16, 1, -8, -11, -8, 1, 16, 37, 64, 97, 136, 181, 232, 289, 352, 421, 496, 577, 664, 757, 856, 961, 1072, 1189, 1312, 1441, 1576, 1717, 1864, 2017, 2176, 2341, 2512], "type": "scatter", "uid": "56e8a5d2-ccc8-11e8-aaa3-88e9fe61eb3a"}], {"title": "3x^2 - 11"}, {"showLink": true, "linkText": "Export to plot.ly"})});</script>
+<div id="b73364b6-8211-4eea-972c-2d3d9a730aac" style="height: 525px; width: 100%;" class="plotly-graph-div"></div><script type="text/javascript">require(["plotly"], function(Plotly) { window.PLOTLYENV=window.PLOTLYENV || {};window.PLOTLYENV.BASE_URL="https://plot.ly";Plotly.newPlot("b73364b6-8211-4eea-972c-2d3d9a730aac", [{"mode": "lines", "name": "data", "text": [], "x": [-30, -29, -28, -27, -26, -25, -24, -23, -22, -21, -20, -19, -18, -17, -16, -15, -14, -13, -12, -11, -10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29], "y": [2689, 2512, 2341, 2176, 2017, 1864, 1717, 1576, 1441, 1312, 1189, 1072, 961, 856, 757, 664, 577, 496, 421, 352, 289, 232, 181, 136, 97, 64, 37, 16, 1, -8, -11, -8, 1, 16, 37, 64, 97, 136, 181, 232, 289, 352, 421, 496, 577, 664, 757, 856, 961, 1072, 1189, 1312, 1441, 1576, 1717, 1864, 2017, 2176, 2341, 2512], "type": "scatter", "uid": "acfc0a68-30da-11e9-9bdc-88e9fe4c5d44"}], {"title": "3x^2 - 11"}, {"showLink": true, "linkText": "Export to plot.ly"})});</script>
 
 
 ### Moving to derivatives of linear functions
@@ -183,7 +183,7 @@ plot([four_x_plus_fifteen_trace])
 
 
 
-<div id="504d59f6-a10b-41bc-b35a-0c124813b4f4" style="height: 525px; width: 100%;" class="plotly-graph-div"></div><script type="text/javascript">require(["plotly"], function(Plotly) { window.PLOTLYENV=window.PLOTLYENV || {};window.PLOTLYENV.BASE_URL="https://plot.ly";Plotly.newPlot("504d59f6-a10b-41bc-b35a-0c124813b4f4", [{"mode": "lines", "name": "data", "text": [], "x": [0, 1, 2, 3, 4, 5], "y": [15, 19, 23, 27, 31, 35], "type": "scatter", "uid": "56f0ace6-ccc8-11e8-b190-88e9fe61eb3a"}], {}, {"showLink": true, "linkText": "Export to plot.ly"})});</script>
+<div id="68a0754a-c764-4a87-ac8a-88c9b314bd24" style="height: 525px; width: 100%;" class="plotly-graph-div"></div><script type="text/javascript">require(["plotly"], function(Plotly) { window.PLOTLYENV=window.PLOTLYENV || {};window.PLOTLYENV.BASE_URL="https://plot.ly";Plotly.newPlot("68a0754a-c764-4a87-ac8a-88c9b314bd24", [{"mode": "lines", "name": "data", "text": [], "x": [0, 1, 2, 3, 4, 5], "y": [15, 19, 23, 27, 31, 35], "type": "scatter", "uid": "ad070e1a-30da-11e9-a83f-88e9fe4c5d44"}], {}, {"showLink": true, "linkText": "Export to plot.ly"})});</script>
 
 
 Ok, time for what we are here for, derivatives.  Remember that the derivative is the instantaneous rate of change of a function, and is expressed as:
@@ -261,7 +261,7 @@ plot([four_x_plus_fifteen_trace, trace_delta_f_four_x_plus_fifteen, trace_delta_
 ```
 
 
-<div id="ad2d730b-a77b-4e6b-86a5-94b3dd8477f3" style="height: 525px; width: 100%;" class="plotly-graph-div"></div><script type="text/javascript">require(["plotly"], function(Plotly) { window.PLOTLYENV=window.PLOTLYENV || {};window.PLOTLYENV.BASE_URL="https://plot.ly";Plotly.newPlot("ad2d730b-a77b-4e6b-86a5-94b3dd8477f3", [{"mode": "lines", "name": "data", "text": [], "x": [0, 1, 2, 3, 4, 5], "y": [15, 19, 23, 27, 31, 35], "type": "scatter", "uid": "5857dbae-ccc8-11e8-b5cb-88e9fe61eb3a"}, {"mode": "lines", "name": "delta f = 4", "text": [], "x": [3, 3], "y": [23, 27], "type": "scatter", "uid": "5857dcf8-ccc8-11e8-9c8e-88e9fe61eb3a"}, {"mode": "lines", "name": "delta x = 1", "text": [], "x": [2, 3], "y": [23, 23], "type": "scatter", "uid": "5857ddac-ccc8-11e8-8682-88e9fe61eb3a"}], {"title": "4x + 15"}, {"showLink": true, "linkText": "Export to plot.ly"})});</script>
+<div id="3a393b27-e654-4b0f-ae94-29883c9f4a4b" style="height: 525px; width: 100%;" class="plotly-graph-div"></div><script type="text/javascript">require(["plotly"], function(Plotly) { window.PLOTLYENV=window.PLOTLYENV || {};window.PLOTLYENV.BASE_URL="https://plot.ly";Plotly.newPlot("3a393b27-e654-4b0f-ae94-29883c9f4a4b", [{"mode": "lines", "name": "data", "text": [], "x": [0, 1, 2, 3, 4, 5], "y": [15, 19, 23, 27, 31, 35], "type": "scatter", "uid": "ad1aef02-30da-11e9-8202-88e9fe4c5d44"}, {"mode": "lines", "name": "delta f = 4", "text": [], "x": [3, 3], "y": [23, 27], "type": "scatter", "uid": "ad1af100-30da-11e9-b6c3-88e9fe4c5d44"}, {"mode": "lines", "name": "delta x = 1", "text": [], "x": [2, 3], "y": [23, 23], "type": "scatter", "uid": "ad1af218-30da-11e9-b2e0-88e9fe4c5d44"}], {"title": "4x + 15"}, {"showLink": true, "linkText": "Export to plot.ly"})});</script>
 
 
 #### Calculating the derivative
@@ -318,11 +318,11 @@ tangent_line_four_x_plus_fifteen
 
 
 
-    {'x': [0.0, 2, 4.0],
-     'y': [15.0, 23, 31.0],
-     'mode': 'lines',
+    {'mode': 'lines',
      'name': "f' (x) = 4.0",
-     'text': []}
+     'text': [],
+     'x': [0.0, 2, 4.0],
+     'y': [15.0, 23, 31.0]}
 
 
 
@@ -351,7 +351,7 @@ plot([four_x_plus_fifteen_trace, *three_x_plus_tangents])
 ```
 
 
-<div id="9b76c619-fd33-4c32-9f24-9a5ecf375cf7" style="height: 525px; width: 100%;" class="plotly-graph-div"></div><script type="text/javascript">require(["plotly"], function(Plotly) { window.PLOTLYENV=window.PLOTLYENV || {};window.PLOTLYENV.BASE_URL="https://plot.ly";Plotly.newPlot("9b76c619-fd33-4c32-9f24-9a5ecf375cf7", [{"mode": "lines", "name": "data", "text": [], "x": [0, 1, 2, 3, 4, 5], "y": [15, 19, 23, 27, 31, 35], "type": "scatter", "uid": "5af2fb3a-ccc8-11e8-8db3-88e9fe61eb3a"}, {"mode": "lines", "name": "f' (x) = 4.0", "text": [], "x": [1.0, 2, 3.0], "y": [19.0, 23, 27.0], "type": "scatter", "uid": "5af2fd30-ccc8-11e8-9329-88e9fe61eb3a"}, {"mode": "lines", "name": "delta f = 4", "text": [], "x": [3, 3], "y": [23, 27], "type": "scatter", "uid": "5af2fe5c-ccc8-11e8-a6cb-88e9fe61eb3a"}, {"mode": "lines", "name": "delta x = 1", "text": [], "x": [2, 3], "y": [23, 23], "type": "scatter", "uid": "5af2ff42-ccc8-11e8-8860-88e9fe61eb3a"}], {}, {"showLink": true, "linkText": "Export to plot.ly"})});</script>
+<div id="2f23d9c6-e73a-490f-a8c3-b9d34d958fc0" style="height: 525px; width: 100%;" class="plotly-graph-div"></div><script type="text/javascript">require(["plotly"], function(Plotly) { window.PLOTLYENV=window.PLOTLYENV || {};window.PLOTLYENV.BASE_URL="https://plot.ly";Plotly.newPlot("2f23d9c6-e73a-490f-a8c3-b9d34d958fc0", [{"mode": "lines", "name": "data", "text": [], "x": [0, 1, 2, 3, 4, 5], "y": [15, 19, 23, 27, 31, 35], "type": "scatter", "uid": "ad2faca8-30da-11e9-bb46-88e9fe4c5d44"}, {"mode": "lines", "name": "f' (x) = 4.0", "text": [], "x": [1.0, 2, 3.0], "y": [19.0, 23, 27.0], "type": "scatter", "uid": "ad2faeb0-30da-11e9-a6ea-88e9fe4c5d44"}, {"mode": "lines", "name": "delta f = 4", "text": [], "x": [3, 3], "y": [23, 27], "type": "scatter", "uid": "ad2fafdc-30da-11e9-83b4-88e9fe4c5d44"}, {"mode": "lines", "name": "delta x = 1", "text": [], "x": [2, 3], "y": [23, 23], "type": "scatter", "uid": "ad2fb0d8-30da-11e9-a05e-88e9fe4c5d44"}], {}, {"showLink": true, "linkText": "Export to plot.ly"})});</script>
 
 
 So that function highlights the rate of change is moving at precisely the point x = 2.  Sometimes it is useful to see how the derivative is changing across all x values.  With linear functions we know that our function is always changing by the same rate, and therefore the rate of change is constant.  Let's write a function that allows us to see the function, and the derivative side by side.
@@ -378,7 +378,14 @@ plot_figure(comapared_four_x_plut_fifteen )
 
 
 
-<div id="fafce08b-92c2-418f-b5a8-167ecb00bc0c" style="height: 525px; width: 100%;" class="plotly-graph-div"></div><script type="text/javascript">require(["plotly"], function(Plotly) { window.PLOTLYENV=window.PLOTLYENV || {};window.PLOTLYENV.BASE_URL="https://plot.ly";Plotly.newPlot("fafce08b-92c2-418f-b5a8-167ecb00bc0c", [{"mode": "lines", "name": "data", "text": [], "x": [0, 1, 2, 3, 4, 5, 6], "y": [15, 19, 23, 27, 31, 35, 39], "type": "scatter", "uid": "6227af2e-ccc8-11e8-b82b-88e9fe61eb3a", "xaxis": "x", "yaxis": "y"}, {"mode": "lines", "name": "data", "text": [], "x": [0, 1, 2, 3, 4, 5, 6], "y": [4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0], "type": "scatter", "uid": "62285122-ccc8-11e8-93c0-88e9fe61eb3a", "xaxis": "x2", "yaxis": "y2"}], {"xaxis": {"anchor": "y", "domain": [0.0, 0.45]}, "yaxis": {"anchor": "x", "domain": [0.0, 1.0]}, "xaxis2": {"anchor": "y2", "domain": [0.55, 1.0]}, "yaxis2": {"anchor": "x2", "domain": [0.0, 1.0]}}, {"showLink": true, "linkText": "Export to plot.ly"})});</script>
+<div id="ea8fd0a8-c602-4838-a89b-7bf174a47763" style="height: 525px; width: 100%;" class="plotly-graph-div"></div><script type="text/javascript">require(["plotly"], function(Plotly) { window.PLOTLYENV=window.PLOTLYENV || {};window.PLOTLYENV.BASE_URL="https://plot.ly";
+        Plotly.plot(
+            'ea8fd0a8-c602-4838-a89b-7bf174a47763',
+            [{"mode": "lines", "name": "data", "text": [], "x": [0, 1, 2, 3, 4, 5, 6], "y": [15, 19, 23, 27, 31, 35, 39], "type": "scatter", "uid": "ad3e1842-30da-11e9-af28-88e9fe4c5d44", "xaxis": "x", "yaxis": "y"}, {"mode": "lines", "name": "data", "text": [], "x": [0, 1, 2, 3, 4, 5, 6], "y": [4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0], "type": "scatter", "uid": "ad3eac62-30da-11e9-ab36-88e9fe4c5d44", "xaxis": "x2", "yaxis": "y2"}],
+            {"xaxis": {"anchor": "y", "domain": [0.0, 0.45]}, "yaxis": {"anchor": "x", "domain": [0.0, 1.0]}, "xaxis2": {"anchor": "y2", "domain": [0.55, 1.0]}, "yaxis2": {"anchor": "x2", "domain": [0.0, 1.0]}},
+            {"showLink": true, "linkText": "Export to plot.ly"}
+        ).then(function () {return Plotly.addFrames('ea8fd0a8-c602-4838-a89b-7bf174a47763',{});}).then(function(){Plotly.animate('ea8fd0a8-c602-4838-a89b-7bf174a47763');})
+        });</script>
 
 
 ### Summary
