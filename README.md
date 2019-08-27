@@ -15,8 +15,8 @@ $f'(x) = \frac{\Delta y}{\Delta x} =  \frac{f(x + \Delta x) - f(x)}{\Delta x}$. 
 
 For this first section, you should be able to answer all of the question with an understanding of our definition of a derivative:
 
-1.  Our intuitive explanation that a derivative is the instantaneous rate of change of a function
-2.  Our mathematical definition is that 
+1. Our intuitive explanation that a derivative is the instantaneous rate of change of a function
+2. Our mathematical definition is that 
 
 $f'(x) = \frac{\Delta y}{\Delta x} =  \frac{f(x + \Delta x) - f(x)}{\Delta x}$
 
