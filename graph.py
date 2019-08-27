@@ -8,9 +8,6 @@ def trace(data, mode = 'markers', name="data"):
     y_values = list(map(lambda point: point['y'],data))
     return {'x': x_values, 'y': y_values, 'mode': mode, 'name': name}
 
-def plot_figure(figure):
-    plotly.offline.iplot(figure)
-
 def line_function_trace(line_function, x_values, mode = 'lines', name = 'line function'):
     values = line_function_data(line_function, x_values)
     values.update({'mode': mode, 'name': name})
@@ -40,6 +37,8 @@ def build_layout(x_axis = None, y_axis = None, options = {}):
     layout.update(options)
     return layout
 
+def plot_figure(figure):
+    plotly.offline.iplot(figure)
 
 def make_subplots(one_one_traces = [], one_two_traces = [], two_one_traces = [], two_two_traces = []):
     if two_one_traces or two_two_traces:
